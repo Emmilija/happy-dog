@@ -1,0 +1,52 @@
+@import '../index.scss';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+font-family: $font-family;
+}
+
+// .form-container {
+//     width: 100%;
+//     height: auto;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+
+// #dogSelect {
+//     width: 50%;
+//     font-size: 1rem;
+//     padding: 0.8rem;
+//     border: 1px solid black;
+  
+// }
+
+.form-container {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .select-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
