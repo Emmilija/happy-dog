@@ -1,0 +1,40 @@
+@import '../index.scss';
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.footer {
+  font-family: $font-family;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+  height: 30rem;
+  margin: 2rem;
+}
+
+.footer-logo {
+  transform: rotate(-0.05turn);
+  border-radius: 40%;
+}
+
+
+@media screen and (max-width: 458px) {
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+}
