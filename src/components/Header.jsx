@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import { FaPaw} from 'react-icons/fa'
 import {CgMenu} from 'react-icons/cg'
 import { useState } from 'react'
+// import background from '../asseets/images/landing-page-dog.jpg'
 
 
 function Header() {
@@ -19,8 +20,8 @@ const textClassName = `text ${isMenuOpen ? 'with-margin' : ''}`;
 
 
     return (
-      <header>
-        <div className="header">
+      <header >
+        <div  className="header">
           <div className="logo">
             <img className='logoImg' src={Logii} alt="" />
           </div>

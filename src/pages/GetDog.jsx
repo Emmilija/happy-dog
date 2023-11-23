@@ -1,83 +1,83 @@
-import {FetchDogs} from '../context/FetchDog'
-import { useState, useEffect } from 'react';
-import '../Styles/GetDog.scss'
+// import {FetchDogs} from '../context/FetchDog'
+// import { useState, useEffect } from 'react';
+// import '../Styles/GetDog.scss'
 
-function GetDog() {
-    const [dogData, setDogData] = useState([])
-    const [selectDog, setSelectDog] = useState('')
-    const [selectImage, setSelectImage] = useState(null)
+// function GetDog() {
+//     const [dogData, setDogData] = useState([])
+//     const [selectDog, setSelectDog] = useState('')
+//     const [selectImage, setSelectImage] = useState(null)
 
-    useEffect(() => {
-        async function fetchData() {
-        try {
-            const data = await FetchDogs()
-            setDogData(data)
-        }catch(error) {
-            console.log('Error fetchin data', error)
-        }
-    }
-    fetchData()
-    }, [])
+//     useEffect(() => {
+//         async function fetchData() {
+//         try {
+//             const data = await FetchDogs()
+//             setDogData(data)
+//         }catch(error) {
+//             console.log('Error fetchin data', error)
+//         }
+//     }
+//     fetchData()
+//     }, [])
 
 
-    useEffect(() => {
+//     useEffect(() => {
         
-const selectedBreedData = dogData.find((entry) => entry.breed === selectDog)
+// const selectedBreedData = dogData.find((entry) => entry.breed === selectDog)
 
-if(selectedBreedData) {
-    setSelectImage(selectedBreedData.imageUrl)
-}else {
-    setSelectImage(null)
-}
+// if(selectedBreedData) {
+//     setSelectImage(selectedBreedData.imageUrl)
+// }else {
+//     setSelectImage(null)
+// }
 
-    }, [selectDog, dogData])
+//     }, [selectDog, dogData])
 
-function chooseDog(e) {
-    const selectedBreed = e.target.value
-    setSelectDog(selectedBreed)
+// function chooseDog(e) {
+//     const selectedBreed = e.target.value
+//     setSelectDog(selectedBreed)
    
-}
+// }
 
-    return (
+//     return (
        
-        <div className='form-container'>
-            <h1>Get Dog</h1>
-          <form action="" >
-            <label className='form-label' htmlFor="dogSelect">Search for your favourite breed</label>
+//         <div className='form-container'>
+//             <h1>Get Dog</h1>
+//           <form action="" >
+//             <label className='form-label' htmlFor="dogSelect">Search for your favourite breed</label>
 
-            {dogData.length > 0 ? (
-                <select 
-                id="dogSelect" 
-                className="select-input"
-                onChange={chooseDog}
-                 value={selectDog}>
+//             {dogData.length > 0 ? (
+//                 <select 
+//                 id="dogSelect" 
+//                 className="select-input"
+//                 onChange={chooseDog}
+//                  value={selectDog}>
                    
-                        <option  value=''>Select breed</option>
+//                         <option  value=''>Select breed</option>
 
-                   {dogData.map((entry, index) => (
-                    <option key={index} value={entry.breed}>{entry.breed}</option>
-                   ))}
+//                    {dogData.map((entry, index) => (
+//                     <option key={index} value={entry.breed}>{entry.breed}</option>
+//                    ))}
 
-                </select>
+//                 </select>
                 
-            ) : (
-                <p>Loading</p>
-            )
+//             ) : (
+//                 <p>Loading</p>
+//             )
          
-            }
-            </form>
-            {selectImage && (
-                <div>
-                    <h2>{selectDog}</h2>
-                    <img src={selectImage} alt={selectDog} />
-                </div>
-            )}
+//             }
+//             </form>
+//             {selectImage && (
+//                 <div>
+//                     <h2>{selectDog}</h2>
+//                     <img src={selectImage} alt={selectDog} />
+//                 </div>
+//             )}
       
          
-        </div>
+//         </div>
        
-    )
-}
+//     )
+// }
 
 
-export default GetDog;
+// export default GetDog;

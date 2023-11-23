@@ -1,6 +1,6 @@
 export async function FetchDogs() {
   try {
-    const breedListName = await fetch("https://dog.ceo/api/breeds/list/all");
+    const breedListName = await fetch("https://dog.ceo/api/breeds/  list/all");
 
     const breedListData = await breedListName.json();
 

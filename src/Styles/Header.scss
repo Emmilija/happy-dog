@@ -18,7 +18,7 @@ header {
     width: 100%;
     overflow: hidden;
     height: 35rem;
-    background-color: #e8cfbb;
+//    background-image: url(landing-page-dog.jpg);
 
 }
 
@@ -82,13 +82,13 @@ transition: all 0.2s ease-in-out 0s;
 
 .text {
     position: relative;
-    width: 94%;
-    left: 6%;
+    width: 100%;
+    left: 5%;
     font-family: $font-family;
     padding-right: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
 }
@@ -105,7 +105,7 @@ transition: all 0.2s ease-in-out 0s;
 }
 
 .home {
-    color: rgb(53, 190, 144);
+    color: rgb(7, 156, 106);
     text-shadow: 0.9px 0.9px rgb(255, 230, 192);
 }
 
@@ -115,7 +115,7 @@ transition: all 0.2s ease-in-out 0s;
 }
 
 .two-doggo {
-    width: 100%;
+    width: 80%;
 }
 
 @keyframes slideRight {

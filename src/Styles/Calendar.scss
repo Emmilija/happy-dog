@@ -1,0 +1,57 @@
+.calendar {
+    margin: 5rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+  }
+  
+  .persistent-calendar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%; 
+  }
+  
+  .persistent-calendar {
+    width: 80%; 
+  }
+  .calendarPost {
+    position: relative;
+  }
+  .label {
+    font-size: 1.3rem;
+    margin: 1rem;
+  }
+  
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+  }
+  #service {
+    padding: 0.5rem;
+  }
+  
+  .submit {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #000021;
+    background: #80b4b0;
+    line-height: 1.15;
+    font-size: 16px;
+  
+    &:hover {
+      transition: all 0.1s ease;
+      box-shadow: 0 0 0 0 #fff, 0 0 0 3px #5ab6b4;
+    }
+  }
+
